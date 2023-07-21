@@ -1,5 +1,6 @@
 import os
 from pandas_datareader import data as pdr
+##import pandas_datareader as pdr
 import pandas as pd
 import fix_yahoo_finance as yf
 
@@ -15,6 +16,8 @@ def build_stock_dataset(start=START_DATE, end=END_DATE):
     :returns: stock_prices.csv
     """
 
+    ## starting key sets data
+    ## https://pythonprogramming.net/data-acquisition-machine-learning/#google_vignette
     statspath = "intraQuarter/_KeyStats/"
     ticker_list = os.listdir(statspath)
 
